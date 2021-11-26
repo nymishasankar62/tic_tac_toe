@@ -1,11 +1,9 @@
-import React from "react";
-import"../App.css";
-function Square({val, chooseSquare}){
-    return(
-        <div className="square" onClick={chooseSquare}>
-            {val}
+import React from 'react'
 
-        </div>
+export default function Square(props) {
+    return (
+        <button className="square" onClick={props.onClick}>
+            {props.value}
+        </button>
     )
 }
-export default Square
